@@ -6,6 +6,8 @@ A userscript for [Fluid.app](http://fluidapp.com/) and [twitter.com](http://twit
 
 This userscript can be used with your twitter.com instance of Fluid.app (SSB) to update the dock badge with the count of unread tweets. It also displays a growl notification with the unread count every 10 minutes, just in case you don't watch your dock.
 
+Please note that I am not aware if this functions correctly with #newtwitter, I don't yet have access to it.
+
 ## Requirements
 
 * [Fluid.app](http://fluidapp.com/)
@@ -13,11 +15,6 @@ This userscript can be used with your twitter.com instance of Fluid.app (SSB) to
 * Growl
 
 ## Install
-
-Pre-requisite steps, you may have already done these:
-
-* Install Growl
-* Install Fluid and create a SSB instance of twitter.com
 
 1. Download 'Twitter Unread Notifier.user.js'.
 2. Place the file into your Twitter SSB's userscript folder located at `~/Library/Application Support/Fluid/SSB/<your-ssb-name>/Userscripts`. You can also access this from your Twitter SSB using `Userscripts > Open Userscripts Folder`.
