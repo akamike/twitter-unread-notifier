@@ -6,7 +6,7 @@ A userscript for [Fluid.app](http://fluidapp.com/) and [twitter.com](http://twit
 
 This userscript can be used with your twitter.com instance of Fluid.app (SSB) to update the dock badge with the count of unread tweets. It also displays a growl notification with the unread count every 10 minutes, just in case you don't watch your dock.
 
-Please note that I am not aware if this functions correctly with #newtwitter, I don't yet have access to it.
+This also now functions correctly with #newtwitter.
 
 ## Requirements
 
