@@ -14,14 +14,13 @@
 
 (function () {
   if(window.fluid) {
-    var pageTitle = document.getElementById('page_title');
     var unread = lastGrowl = 0;
 
     /*
      * Dock badge, runs every 1 second
      */
     var dockInterval = window.setInterval(function(){
-      var unreadChange = pageTitle.innerText.match(/\d+/);
+      var unreadChange = document.title.match(/\d+/);
 
       if (unreadChange) {
         if (unreadChange[0] > unread) {
