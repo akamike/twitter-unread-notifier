@@ -6,8 +6,6 @@
 // @include     https://twitter.com/*
 // @include     http://*.twitter.com/*
 // @include     https://*.twitter.com/*
-// @include     http://twitter.com*
-// @include     http://twitter.com/home
 // @author      Mike Robinson
 // @homepage    http://twitter.com/akamike
 // ==/UserScript==
@@ -20,9 +18,11 @@
      * Dock badge, runs every 1 second
      */
     var dockInterval = window.setInterval(function(){
-      var unreadChange = document.title.match(/\d+/);
+      var unreadChange = document.title.match(/^\(\d+\)/);
 
       if (unreadChange) {
+        unreadChange[0] = parseInt(unreadChange[0].replace(/[\(\)]/g, ''));
+
         if (unreadChange[0] > unread) {
           unread = unreadChange[0];
           window.fluid.dockBadge = unread;
